@@ -1,0 +1,19 @@
+void setup()
+{
+ Serial.begin(115200);
+ 
+}
+void loop()
+{
+if(Serial.available()>0)
+{
+String str = Serial.readStringUntil('\n');
+int temp= str.toInt();
+ Serial.print("Temperature:");
+ Serial.println(temp);
+ delay(2000);
+}
+ else{
+ Serial.println("Error......");
+ }
+}
