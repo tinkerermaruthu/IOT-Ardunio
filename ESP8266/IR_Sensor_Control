@@ -22,9 +22,9 @@ void loop() {
 CAYENNE_OUT(0)
 {
  if(digitalRead(irpin)==HIGH) {
-  Cayenne.virtualWrite(0,1); 
+  Cayenne.virtualWrite(0,1,"digital_sensor","d"); 
  }
  else{
-  Cayenne.virtualWrite(0,0);
+  Cayenne.virtualWrite(0,0,"digital_sensor""d");
  }
  }
