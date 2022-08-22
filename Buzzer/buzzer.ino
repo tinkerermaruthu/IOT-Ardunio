@@ -1,7 +1,7 @@
 
 #include <DHT.h>
 #include <DHT_U.h>
-
+ 
 int IRSensor = 8; // connect ir sensor to arduino pin 2
 int Buzzer = 7; // connect Led to arduino pin 13
 
