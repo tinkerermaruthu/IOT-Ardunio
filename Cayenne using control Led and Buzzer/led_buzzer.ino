@@ -31,6 +31,6 @@ CAYENNE_IN(0)
   digitalWrite(led, getValue.asInt()); 
 }
 CAYENNE_IN(1)
-{
+{ 
   digitalWrite(buzzer, getValue.asInt()); 
 }
